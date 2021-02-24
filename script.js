@@ -1,10 +1,9 @@
 <script>
-// Player name
     var player1 = "Player 1";
     var player2 = "Player 2";
 
-    // Function to roll the dice
-    function rollTheDice() {
+    // Function to roll our dice 
+     function rollTheDice() {
         setTimeout(function () {
             var randomNumber1 = Math.floor(Math.random() * 6) + 1; //left element
             var randomNumber2 = Math.floor(Math.random() * 6) + 1; //right element
