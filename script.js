@@ -1,17 +1,17 @@
-<script>
+
     var player1 = "Player 1";
     var player2 = "Player 2";
-
+    document.getElementById("btn").addEventListener("click",rollTheDice(), false);
      function rollTheDice() {
         setTimeout(function () {
-            var randomNumber1 = Math.floor(Math.random() * 6) + 1; 
-            var randomNumber2 = Math.floor(Math.random() * 6) + 1; 
+            var randomNumber1 = Math.floor(Math.random() * 6) + 1;
+            var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
             document.querySelector(".img1").setAttribute("src",
-                "dice" + randomNumber1 + ".png");
+                "images/dice" + randomNumber1 + ".png");
 
             document.querySelector(".img2").setAttribute("src",
-                "dice" + randomNumber2 + ".png");
+                "images/dice" + randomNumber2 + ".png");
 
             if (randomNumber1 === randomNumber2) {
                 document.querySelector("h1").innerHTML = "Draw!";
@@ -28,4 +28,3 @@
             }
         }, 2500);
     }
-</script>
